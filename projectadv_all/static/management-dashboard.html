@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="management-dashboard.js"></script>
+</head>
+<body>
+<h1>Management Dashboard</h1>
+<nav>
+    <button onclick="navigateTo('users')">Manage Users</button>
+    <button onclick="navigateTo('products')">Manage Products</button>
+    <button onclick="navigateTo('orders')">Manage Orders</button>
+    <button onclick="logout()">Logout</button>
+</nav>
+<main>
+    <section id="users" class="management-section">
+        <h2>Users Management</h2>
+        <div id="users-content"></div>
+    </section>
+    <section id="products" class="management-section" style="display:none;">
+        <h2>Products Management</h2>
+        <div id="products-content"></div>
+    </section>
+    <section id="orders" class="management-section" style="display:none;">
+        <h2>Orders Management</h2>
+        <div id="orders-content"></div>
+    </section>
+</main>
+</body>
+</html>
